@@ -115,7 +115,7 @@ function initEventListeners() {
         videoPlaceholder.innerHTML = `
             <div style="font-size: 3em; margin-bottom: 15px;">🎬</div>
             <h3 style="color: #d63384; margin-bottom: 10px;">Не удалось загрузить видео</h3>
-            <p style="color: #666; margin-bottom: 15px;">Проверьте файл I'malwayswithyou.MP4 в папке images</p>
+            <p style="color: #666; margin-bottom: 15px;">Проверьте файл imalwayswithyou.mp4 в папке images</p>
         `;
     });
 }
@@ -163,10 +163,10 @@ function handleCounterClick() {
 
 function loadPhotos() {
     const photos = [
-    { filename: 'thesweetestface.jpg', description: 'Самое милое личико в мире 🥰' },
-    { filename: 'mysweetheart.jpg', description: 'Мое сердце 💖' },
-    { filename: 'mymostbelovednyasha.jpg', description: 'Моя самая любимая няша 💕' }
-];
+        { filename: 'thesweetestface.jpg', description: 'Самое милое личико в мире 🥰' },
+        { filename: 'mysweetheart.jpg', description: 'Мое сердце 💖' },
+        { filename: 'mymostbelovednyasha.jpg', description: 'Моя самая любимая няша 💕' }
+    ];
 
     photos.forEach(photo => {
         addLocalPhoto(photo.filename, photo.description);
@@ -207,9 +207,9 @@ function showPhotoInstructions() {
             <h3 style="color: #d63384; margin-bottom: 15px;">💕 Как добавить фотографии 💕</h3>
             <p style="color: #666;">Убедитесь что в папке "images" есть файлы:</p>
             <ul style="color: #666; text-align: left; display: inline-block; margin: 10px 0;">
-                <li>Thesweetestface.JPG</li>
-                <li>Mysweetheart.JPG</li>
-                <li>mymostbelovednyasha.JPG</li>
+                <li>thesweetestface.jpg</li>
+                <li>mysweetheart.jpg</li>
+                <li>mymostbelovednyasha.jpg</li>
             </ul>
         </div>
     `;
