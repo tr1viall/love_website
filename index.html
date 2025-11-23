@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Илоны ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Илона <span class="heart">❤️</span></h1>
+            <p>Самая прекрасная девушка на свете!</p>
+        </div>
+
+        <div class="gallery" id="photoGallery">
+            <!-- Фотографии будут добавляться здесь -->
+        </div>
+
+        <!-- Большое сердце с надписью -->
+        <div class="love-heart-section">
+            <div class="love-heart">
+                <div class="heart-shape"></div>
+                <div class="love-text">Вместе навсегда<br>Любовь моя</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Мобильные кнопки -->
+    <div class="mobile-buttons">
+        <button class="mobile-btn support" id="mobileSupport">🎬</button>
+        <button class="mobile-btn memories" id="mobileMemories">💭</button>
+        <button class="mobile-btn secret" id="mobileSecret">🤫</button>
+        <button class="mobile-btn counter" id="mobileCounter">📖</button>
+    </div>
+
+    <!-- Десктопные кнопки -->
+    <div class="desktop-buttons">
+        <div class="support-video" id="supportVideo">🎬 Если будет грустно</div>
+        <div class="memories-btn" id="memoriesBtn">💭 А помнишь?</div>
+        <div class="secret-btn" id="secretBtn">🤫 Тссс</div>
+        <div class="counter-book" id="counterBook">📖 Счетчик приятностей</div>
+    </div>
+
+    <!-- Модальное окно счетчика -->
+    <div class="modal" id="counterModal">
+        <div class="modal-content">
+            <h2>Счетчик приятностей</h2>
+            <div class="counter-number" id="counterNumber">0</div>
+            <div class="wish-message" id="wishMessage">
+                Нажми на розовую область ниже!
+            </div>
+            <div class="click-area" id="clickArea">
+                💕 Нажми меня! 💕
+            </div>
+            <button class="close-btn" id="closeCounterBtn">Закрыть</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно видео -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content video-content">
+            <div class="video-title">
+                <span class="video-heart">💙</span> Я всегда буду рядом <span class="video-heart">💙</span>
+            </div>
+            
+            <div class="video-subtitle">
+                Даже когда трудно - помни, что ты не одна.<br>
+                Я всегда поддержу и буду рядом!
+            </div>
+
+            <div class="video-container">
+                <video class="support-video-player" controls id="supportVideoPlayer">
+                    <source src="images/imalwayswithyou.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <div class="video-placeholder" id="videoPlaceholder">
+                    <div style="font-size: 3em; margin-bottom: 15px;">🎬</div>
+                    <h3 style="color: #d63384; margin-bottom: 10px;">Видео загружается...</h3>
+                </div>
+            </div>
+
+            <div class="encouragement-message">
+                Никогда не грусти! 🌈<br>
+                Ты самая лучшая! 💖
+            </div>
+
+            <button class="close-btn video-close-btn" id="closeVideoBtn">Закрыть</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно воспоминаний -->
+    <div class="modal" id="memoriesModal">
+        <div class="modal-content memories-content">
+            <div class="memories-title">💖 А помнишь? 💖</div>
+            <div class="memories-subtitle">Наши самые теплые моменты...</div>
+            
+            <div class="memories-grid" id="memoriesGrid">
+                <!-- Воспоминания будут добавлены через JavaScript -->
+            </div>
+
+            <button class="close-btn memories-close-btn" id="closeMemoriesBtn">Закрыть</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно Тссс -->
+    <div class="modal" id="secretModal">
+        <div class="modal-content secret-content">
+            <div class="secret-title">🤫 Тссс... Это только для нас</div>
+            <div class="poem-section">
+                <div class="poem-container">
+                    <h3>Ангел по имени Илона</h3>
+                    <div class="poem">
+                        <p>Ангел с именем прекрасным - Илона,</p>
+                        <p>Ты подарила небеса на земле.</p>
+                        <p>Твоя улыбка для меня - икона,</p>
+                        <p>В твоих объятьях я нашел свою судьбу.</p>
+                        
+                        <p>Ты осенила жизнь мою крылами,</p>
+                        <p>Превратила обыденность в мечту.</p>
+                        <p>Я стал счастливейшим из всех людьми,</p>
+                        <p>Встретив тебя, мой ангел, красоту.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="close-btn secret-close-btn" id="closeSecretBtn">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
